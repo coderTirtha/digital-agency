@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: #3c3c3c;
     padding: 10px 45px;
 }
 
@@ -39,8 +39,48 @@ body {
 
 .banner-container {
     height: 100vh;
-    background-image: url('./assets/images/background.jpg');
+    background-image: url('./assets/images/background.jpg'), linear-gradient(#0000007b, #0000006a);
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 250px;
+    color: white;
+}
+
+.banner-title {
+    font-size: 5rem;
+}
+
+.banner-title span {
+    color: #ff3f21;
+}
+
+.banner-description {
+    font-size: 1.3rem;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #F94C30;
+    color: white;
 }
